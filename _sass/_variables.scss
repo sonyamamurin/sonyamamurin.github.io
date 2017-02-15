@@ -3,4 +3,14 @@ $font-size-base: 17px;
 $headings-font-weight: 600;
 $blockquote-font-size: $font-size-base;
 
+.col1,.col2,.col3
+{
+	float: left;
+	margin-left: 3%;
+}
+
+.col1 { width: 48%; }
+.col2 { width: 20%; }
+.col3 { width: 20%; }
+
 @import "bootstrap/variables"; // Then make sure all vars are loaded
