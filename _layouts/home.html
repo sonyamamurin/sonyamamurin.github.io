@@ -5,7 +5,7 @@ layout: default
     {{ content }}
         <div class="container-fluid">
             {% for post in site.posts %}
-                <a class="post-link tooltips" href="{{ post.url | relative_url }}" title="Test"><img src="{{ site.url }}/assets{{ post.postimage }}" class="figure-img img-fluid" alt="{{ post.title }}" style="margin:1px 0px"><span>Tooltip</span></a>
+                    <a class="post-link tooltips" href="{{ post.url | relative_url }}" title="Test"><img src="{{ site.url }}/assets{{ post.postimage }}" alt="{{ post.title }}" style="margin:1px 0px"><span>Tooltip</span></a>
             {% endfor %}
         </div>
 </div>
