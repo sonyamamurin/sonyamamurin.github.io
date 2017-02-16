@@ -1,46 +1,21 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
+    <div class="container-fluid"  id="bootstrap-overrides">
+        <div class="text-center">
+            {% if site.twitter_username %}
+                <a href="https://twitter.com/{{ site.twitter_username }}">twitter</i></a>
             {% endif %}
-            </li>
             {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                <a href="mailto:{{ site.email }}">email</i></a>
             {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+            {% if site.tumblr_url %}
+                <a href="{{ site.tumblr_url }}">tumblr</i></a>
+            {% endif %}
+            {% if site.github_username %}
+                <a href="https://github.com/{{ site.github_username }}">github</i></a>
+            {% endif %}
+            {% if site.pgpkey_url %}
+                <a href="{{ site.pgpkey_url }}">pgp public key</a>
+            {% endif %}
+        </div>
     </div>
-
-  </div>
-
 </footer>

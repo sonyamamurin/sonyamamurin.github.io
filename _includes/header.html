@@ -1,8 +1,7 @@
 <header class="site-header" role="banner">
-    <div class="container-fluid">
-        <div class="text-center" style="margin:5px 0px">
-            <h1 style="active">{{ site.title }}</h1>
-            <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Portfolio</a>
+    <div class="container-fluid"  id="bootstrap-overrides">
+        <div class="text-center">
+            <a href="/" {% if page.url == "/" %}class="active"{% endif %}>{{ site.title }}</a>
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
                 {% for p in navigation_pages %}
                     {% if p.navigation_weight %}

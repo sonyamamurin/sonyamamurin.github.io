@@ -1,31 +1,61 @@
-// Over ride boostrap variables here
+// Override boostrap variables here
+
+//@import "bootstrap/variables"; //  make sure all vars are loaded
 
 $link-hover-decoration: none;
 $link-color: #000;
 $link-hover-color: lighten($link-color, 20%);
+$link-hover-decoration: none;
+
 $font-family-serif: "Times New Roman", Times, serif, Georgia;
 $font-family-base: $font-family-serif;
 
-h1 {
-    color: #fff;
-    background-color: #000;
-}
-
 a {
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
       font-style: italic;
   }
-  &:hover,
-  &:focus, .active {
-      color: #fff;
-  }
- }
+}
 
-.active {
-     color: #fff;
-     background-color: #000;
- }
+#bootstrap-overrides .active {
+        color: #fff;
+        background-color: #000;
+    &:hover, &:focus, &.active {
+        color: #fff;
+    }
+}
 
+.site-header {
+     font-size: 175%;
+     margin:5px 0px;
+}
 
-@import "bootstrap/variables"; //  make sure all vars are loaded
+.site-footer {
+      font-size: 90%;
+      margin:5px 0px;
+}
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:100%;
+  color: #000;
+  background: #FFF;
+  height: 34px;
+  line-height: 34px;
+  text-align: left;
+  visibility: hidden;
+  border-radius: 0px;
+  opacity: .5;
+}
+
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: .5;
+  bottom: 0;
+  left: 0;
+  //margin-left: -76px;
+  //z-index: 50%;
+}
