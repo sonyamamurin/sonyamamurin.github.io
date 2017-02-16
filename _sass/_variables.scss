@@ -1,16 +1,31 @@
 // Over ride boostrap variables here
-$font-size-base: 17px;
-$headings-font-weight: 600;
-$blockquote-font-size: $font-size-base;
 
-.col1,.col2,.col3
-{
-	float: left;
-	margin-left: 3%;
+$link-hover-decoration: none;
+$link-color: #000;
+$link-hover-color: lighten($link-color, 20%);
+$font-family-serif: "Times New Roman", Times, serif, Georgia;
+$font-family-base: $font-family-serif;
+
+h1 {
+    color: #fff;
+    background-color: #000;
 }
 
-.col1 { width: 48%; }
-.col2 { width: 20%; }
-.col3 { width: 20%; }
+a {
+  &:hover,
+  &:focus {
+      font-style: italic;
+  }
+  &:hover,
+  &:focus, .active {
+      color: #fff;
+  }
+ }
 
-@import "bootstrap/variables"; // Then make sure all vars are loaded
+.active {
+     color: #fff;
+     background-color: #000;
+ }
+
+
+@import "bootstrap/variables"; //  make sure all vars are loaded

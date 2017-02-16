@@ -22,12 +22,20 @@ url: "http://sonyamamurin.github.io" # the base hostname & protocol for your sit
 twitter_username: sonyamamurin
 github_username:  sonyamamurin
 
+navigation:
+    name:       portfolio
+    name:       about
 # Build settings
 sass:
     sass_dir: _sass
-    style:
 markdown: kramdown
 gems:
 exclude:
     - Gemfile
     - Gemfile.lock
+
+# Compress settings
+compress_html:
+  comments: ["<!-- ", " -->"]
+  blanklines: false
+  ett:

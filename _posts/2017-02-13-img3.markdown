@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Img3"
+date:   2017-02-13 01:37:46 +0100
+categories:
+postimage: /img/img3.gif
+---
+![My helpful screenshot]({{ site.url }}/assets/img/img3.gif "image title"){: .img-fluid }
+
+
+Don't even ask.
