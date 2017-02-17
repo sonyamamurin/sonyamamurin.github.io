@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="home">
     {{ content }}
-        <div class="container-fluid">
+        <div class="container-fluid no-wrap-please">
             {% for post in site.posts %}
-                    <a class="post-link tooltips" href="{{ post.url | relative_url }}" title="Test"><img src="{{ site.url }}/assets{{ post.postimage }}" alt="{{ post.title }}" style="margin:1px 0px"><span>Tooltip</span></a>
+                    <a href="{{ post.url | relative_url }}" title="Test"><img class="post-image" src="{{ site.url }}/assets{{ post.postimage }}" alt="{{ post.title }}"></a>
             {% endfor %}
         </div>
 </div>

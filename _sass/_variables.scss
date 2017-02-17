@@ -1,65 +1,50 @@
 // Override boostrap variables here
 
-//@import "bootstrap/variables"; //  make sure all vars are loaded
+$my-black-color: #000;
+$my-white-color: #fff;
 
 $link-hover-decoration: none;
-$link-color: #000;
+$link-color: $my-black-color;
 $link-hover-color: lighten($link-color, 20%);
-$link-hover-decoration: none;
 
 $font-family-serif: "Times New Roman", Times, serif, Georgia;
 $font-family-base: $font-family-serif;
 
 a {
-  &:hover, &:focus {
-      font-style: italic;
+  &:hover,
+  &:focus {
+    font-style: italic;
   }
 }
 
-#bootstrap-overrides .active {
-        color: #fff;
-        background-color: #000;
-    &:hover, &:focus, &.active {
-        color: #fff;
+img {
+  margin-top: 1px;
+}
+
+@media (max-width: 767px) {
+  img {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}
+
+.active {
+  background-color: $my-black-color;
+  color: $my-white-color;
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $my-white-color;
     }
 }
 
-.site-header {
-     font-size: 175%;
-     margin:5px 0px;
-}
-
-.site-footer {
-      font-size: 90%;
-      margin:5px 0px;
-}
-
-.center-block {
-    float: none;
-}
-
-a.tooltips {
-  position: relative;
-  display: inline;
-}
-a.tooltips span {
-  position: absolute;
-  width:100%;
-  color: #000;
-  background: #FFF;
-  height: 34px;
-  line-height: 34px;
-  text-align: left;
-  visibility: hidden;
-  border-radius: 0px;
-  opacity: .5;
-}
-
-a:hover.tooltips span {
-  visibility: visible;
-  opacity: .5;
-  bottom: 0;
-  left: 0;
-  //margin-left: -76px;
-  //z-index: 50%;
+.post-image {
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
 }
