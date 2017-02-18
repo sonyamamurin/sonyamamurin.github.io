@@ -4,19 +4,19 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="container">
                 <header class="text-center">
-                    <a class="h2 active" href="{{ page.url }}" class="active">{{ page.title | escape }}</a>
+                    <a class="h2 current-page" href="{{ page.url }}">{{ page.title | escape }}</a>
                     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
                 </header>
-                    <div class="post-content col-md-6" itemprop="articleImage">
-                        <img src="/assets{{ page.postimage }}" class="img-responsive" alt="{{ page.postimage }}" style="margin:1px 0px">
+                    <div class="col-md-7">
+                        <img src="/assets{{ page.postimage }}" class="img-responsive" alt="{{ page.postimage }}">
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         {{ content }}
                     </div>
                     {% for img in post.images %}
                         <div class="col-md-6">
-                            <img src="{{ site.url }}/assets{{ img }}" class="img-responsive" alt="{{ img }}" style="margin:1px 0px">
+                            <img src="{{ site.url }}/assets{{ img }}" class="img-responsive" alt="{{ img }}">
                         </div>
                     {% endfor %}
     </div>
