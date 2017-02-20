@@ -25,19 +25,19 @@ tumblr_url: "http://farlig.tetov.se/"
 pgpkey_url: "https://pgp.mit.edu/pks/lookup?op=get&search=0xFD1C578F818FD7A3"
 
 navigation:
-    name:       portfolio
-    name:       about
+- about
 # Build settings
 sass:
     sass_dir: _sass
+    style: compressed
 markdown: kramdown
 gems:
 exclude:
     - Gemfile
     - Gemfile.lock
+    - node_modules
 
 # Compress settings
 compress_html:
   comments: ["<!-- ", " -->"]
   blanklines: false
-  ett:

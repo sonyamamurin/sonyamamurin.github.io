@@ -8,34 +8,28 @@ a {
 }
 
 img {
-  margin-top: 1px;
-}
-
-@media (max-width: $screen-sm-max) {
-  img {
-    display: block;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-top: 2px;
+  &.front-page {
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: .6;
+    }
   }
 }
 
 .current-page {
   background-color: $my-black-color;
   color: $my-white-color;
-
   &:hover,
   &:focus,
   &:active {
     color: $my-white-color;
     }
-}
-
-.post-image {
-  &:hover,
-  &:focus,
-  &:active {
-    opacity: .6;
-  }
 }

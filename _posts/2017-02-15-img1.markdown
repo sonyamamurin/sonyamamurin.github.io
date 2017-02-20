@@ -3,9 +3,6 @@ layout: post
 title:  "img1"
 date:   2017-02-15 01:37:46 +0100
 categories: images
-postimage: /img/img1.jpg
+hero: hero.jpg
 ---
-![My helpful screenshot]({{ site.url }}/assets/img/img1.jpg "image title"){: .img-fluid }
-
-
-Is this a cat?
+Is this a cat? It might be.

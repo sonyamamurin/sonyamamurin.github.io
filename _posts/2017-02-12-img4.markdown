@@ -3,9 +3,6 @@ layout: post
 title:  "Img4"
 date:   2017-02-12 01:37:46 +0100
 categories: images
-postimage: /img/img4.gif
+hero: hero.gif
 ---
-![My helpful screenshot]({{ site.url }}/assets/img/img4.gif "image title"){: .img-fluid}
-
-
 Is this I forgot.
