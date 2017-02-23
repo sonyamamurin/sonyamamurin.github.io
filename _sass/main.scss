@@ -1,5 +1,3 @@
----
----
 @charset "utf-8";
 // My variables
 @import 'variables'; // My variables
@@ -10,7 +8,7 @@
 
 // Reset and dependencies
 @import 'bootstrap/normalize';
-@import 'bootstrap/print';
+//@import 'bootstrap/print';
 //@import 'bootstrap/glyphicons';//
 
 // Core CSS
@@ -18,7 +16,7 @@
 @import 'bootstrap/type'; //used in nav
 @import 'bootstrap/code'; // code is used for code (y)
 @import 'bootstrap/grid'; // grid is used for grid (y)
-@import 'bootstrap/tables';
+//@import 'bootstrap/tables';
 //@import 'bootstrap/forms';
 //@import 'bootstrap/buttons';//
 
@@ -38,10 +36,10 @@
 //@import 'bootstrap/thumbnails';
 //@import 'bootstrap/alerts';
 //@import 'bootstrap/progress-bars';
-@import 'bootstrap/media';
+//@import 'bootstrap/media';
 //@import 'bootstrap/list-group';
 //@import 'bootstrap/panels';
-@import 'bootstrap/responsive-embed';
+//@import 'bootstrap/responsive-embed';
 //@import 'bootstrap/wells';
 //@import 'bootstrap/close';//
 
@@ -52,7 +50,8 @@
 //@import 'bootstrap/carousel';//
 
 // Utility classes
-@import 'bootstrap/utilities';
-@import 'bootstrap/responsive-utilities';
+//@import 'bootstrap/utilities';
+//@import 'bootstrap/responsive-utilities';
 
-@import 'style'; // My style modifications
+// My style modifications
+@import 'style';

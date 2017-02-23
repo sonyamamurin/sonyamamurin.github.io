@@ -36,7 +36,9 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - node_modules
-
+    - gulpfile.js
+    - package.json
+    - .scss-lint.yml
 # Compress settings
 compress_html:
   comments: ["<!-- ", " -->"]
