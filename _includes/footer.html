@@ -1,21 +1,21 @@
-<footer class="site-footer">
+<footer class="site-footer no-underline">
     <div class="container-fluid">
     <br>
-        <div class="text-center small">
+        <div class="text-center small text-nav">
             {% if site.twitter_username %}
-                <a href="https://twitter.com/{{ site.twitter_username }}">twitter</i></a>
+                <a class="text-nav" href="https://twitter.com/{{ site.twitter_username }}">twitter</i></a>
             {% endif %}
             {% if site.email %}
-                <a href="mailto:{{ site.email }}">email</i></a>
+                <a class="text-nav" href="mailto:{{ site.email }}">email</i></a>
             {% endif %}
             {% if site.tumblr_url %}
-                <a href="{{ site.tumblr_url }}">tumblr</i></a>
+                <a class="text-nav" href="{{ site.tumblr_url }}">tumblr</i></a>
             {% endif %}
             {% if site.github_username %}
-                <a href="https://github.com/{{ site.github_username }}">github</i></a>
+                <a class="text-nav" href="https://github.com/{{ site.github_username }}">github</i></a>
             {% endif %}
             {% if site.pgpkey_url %}
-                <a href="{{ site.pgpkey_url }}">pgp public key</a>
+                <a class="text-nav" href="{{ url }}/{{ site.pgpkey_url }}">pgp public key</a>
             {% endif %}
         </div>
     </div>

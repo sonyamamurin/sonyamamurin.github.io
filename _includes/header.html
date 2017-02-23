@@ -1,11 +1,11 @@
 <header class="site-header" role="banner">
     <div class="container-fluid">
         <div class="text-center h1">
-            <a href="/" {% if page.url == "/" %}class="current-page"{% endif %}>{{ site.title }}</a> ▨
+            <a href="/" class="text-nav{% if page.url == "/" %} current-page{% endif %}">{{ site.title }}</a> ▨
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
                 {% for p in navigation_pages %}
                     {% if p.navigation_weight %}
-                        <a href="{{ p.url }}" {% if p.url == page.url %}class="current-page"{% endif %}>
+                        <a href="{{ p.url }}" class="text-nav{% if p.url == page.url %} current-page{% endif %}">
                         {{ p.title }}</a>
                     {% endif %}
                 {% endfor %}

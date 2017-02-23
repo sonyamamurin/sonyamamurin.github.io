@@ -43,7 +43,7 @@ gulp.task('critical', ['minify-css'], function() {
   critical.generate({
     base: '_site/',
     src: 'index.html',  // Extract critical path CSS for index.html
-    css: ['assets/css/style.css'],
+    css: ['_gulptmp/css/style.css'],
     dest: './_includes/critical.css',
     minify: true,
     include: [/cc_/],

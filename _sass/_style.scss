@@ -1,11 +1,30 @@
 // Add my styles here
 a {
-  &:hover,
-  &:focus,
-  &:active {
-    font-style: italic;
+  text-decoration: underline;
+
+  &.text-nav {
+    color: $my-black-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      font-style: italic;
+    }
+  }
+
+  &.current-page {
+    background-color: $my-black-color;
+    color: $my-white-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $my-white-color;
+      }
   }
 }
+
 
 img {
   display: block;
@@ -22,15 +41,4 @@ img {
       opacity: .6;
     }
   }
-}
-
-.current-page {
-  background-color: $my-black-color;
-  color: $my-white-color;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $my-white-color;
-    }
 }

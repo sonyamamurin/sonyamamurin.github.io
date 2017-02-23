@@ -3,8 +3,8 @@
 $my-black-color: #000;
 $my-white-color: #fff;
 
-$link-hover-decoration: none;
-$link-color: $my-black-color;
+//$link-hover-decoration: none;
+$link-color: lighten($my-black-color, 20%);
 $link-hover-color: lighten($link-color, 20%);
 
 $font-family-serif: "Times New Roman", Times, serif, Georgia;

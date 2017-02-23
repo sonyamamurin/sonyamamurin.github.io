@@ -18,11 +18,11 @@ email: anton@tetov.se
 description: > # this means to ignore newlines until "baseurl:"
     Portfolio for Anton Tetov Johansson
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://arkadian.se" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tetov.se" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sonyamamurin
 github_username: sonyamamurin
 tumblr_url: "http://farlig.tetov.se/"
-pgpkey_url: "https://pgp.mit.edu/pks/lookup?op=get&search=0xFD1C578F818FD7A3"
+pgpkey_url: "pgpkey"
 
 navigation:
 - about
