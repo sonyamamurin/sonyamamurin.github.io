@@ -61,5 +61,5 @@ EKpL6y+xX8T93qVK
 =4J4B
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-Here is a [link to the key](/tetov_public_key.asc). It is
+Here is a [link to the key](/assets/tetov_public_key.asc). It is
 also published on [pgp.mit.edu](https://pgp.mit.edu/pks/lookup?op=vindex&search=0xAAE0D9C19E500251).
