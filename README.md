@@ -9,6 +9,9 @@ I use a [gulp workflow](gulpfile.js) to reduce css and [Anatol Broder's Jekyll l
 ## TODO
 *   ~~Insert actual projects~~ Insert more actual projects
 *   Figure out how to deal with displaying hi res images, lightbox? Like flexbox?
+*   Fix the tumblr link. 
+*   Try `text-responsive` for pgp block. 
+*   Figure out if I should use lower resolution images for start page. 
 
 ## License
 *   Content under `_post`, `_drafts` and `_assets` are mine and if you would like to use it in your own creative work, please contact me first.
