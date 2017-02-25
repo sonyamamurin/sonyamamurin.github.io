@@ -29,11 +29,14 @@ navigation:
 - log
 
 permalink: /:categories/:title.html
+
 # Build settings
 sass:
     sass_dir: _sass
     style: compressed
 markdown: kramdown
+gems:
+    - jekyll-sitemap
 exclude:
     - Gemfile
     - Gemfile.lock
