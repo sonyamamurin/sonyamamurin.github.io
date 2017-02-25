@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Rhino and Revit workshop group assignment"
+title:  "Revit/Rhino workshop"
 date: 2016-11-09
-categories:
+categories: portfolio
+excerpt: "Revit/Rhino workshop"
 hero: hero.jpg
 images:
 - A101-Planer.jpg

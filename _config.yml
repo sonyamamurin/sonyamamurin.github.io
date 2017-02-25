@@ -21,17 +21,19 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tetov.se" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sonyamamurin
 github_username: sonyamamurin
-tumblr_url: "http://farlig.tetov.se/"
+tumblr_username: sonyamamurin
 pgpkey_url: "pgpkey"
 
 navigation:
 - about
+- log
+
+permalink: /:categories/:title.html
 # Build settings
 sass:
     sass_dir: _sass
     style: compressed
 markdown: kramdown
-gems:
 exclude:
     - Gemfile
     - Gemfile.lock

@@ -4,7 +4,7 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="container">
                 <header class="text-center">
-                    <a class="h2 current-page" href="{{ page.url }}">{{ page.title | escape }}</a>
+                    <a class="h2 text-nav current-page" href="{{ page.url }}">{{ page.title | escape }}</a>
                     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
                 </header>
                   {% if page.hero %}

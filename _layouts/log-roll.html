@@ -1,0 +1,36 @@
+---
+layout: page
+---
+
+{% for post in site.categories.log %}
+  <div>
+    <header>
+      <a href="{{ site.url }}{{ post.url }}" class="text-nav h3" title="{{ post.title }}">{{ post.title }}</a>
+      <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+    </header>
+
+      {% if post.image.feature %}
+        <div class="block-center">
+          <img src=
+          {% if post.image.feature contains 'http' %}
+          "{{ post.image.feature }}"
+          {% else %}
+          "{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/{{ post.image.feature }}"
+          {% endif %}
+          alt="{{ post.title }} image" class="image-responsive">
+
+          {% if post.image.credit %}
+          <p class="text-center">Source: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if post.excerpt %}
+        <div>
+            {{ post.excerpt }}
+        </div>
+      {% endif %}
+
+      <p class="text-center h4"><a href="{{ site.url }}{{ post.url }}" class="text-nav" title="{{ post.title }}">…</a></p>
+  </div>
+{% endfor %}

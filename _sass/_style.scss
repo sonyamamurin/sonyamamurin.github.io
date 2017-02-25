@@ -3,7 +3,6 @@ a {
   text-decoration: underline;
 
   &.text-nav {
-    color: $my-black-color;
     text-decoration: none;
 
     &:hover,
@@ -12,6 +11,17 @@ a {
       font-style: italic;
     }
   }
+
+  &.img-desc {
+    font-style: italic;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gray-light;
+    }
+}
 
   &.current-page {
     background-color: $my-black-color;
@@ -25,13 +35,16 @@ a {
   }
 }
 
+.hatch {
+    font-size: 75%;
+}
 
 img {
   display: block;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2px;
+  margin-top: 4px;
   max-width: 100%;
 
   &.front-page {

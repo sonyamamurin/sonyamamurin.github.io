@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Stadsbyggnad Mellemdal"
+title: "Plan for city block Mellemdal"
 date: 2016-11-01
-categories: images
+categories: portfolio
+excerpt: "Plan for city block Mellemdal"
 hero: plan-margaretedal-rita-mellem-husene-illustrator.jpg
 images:
 - Diagram-1.jpg

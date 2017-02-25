@@ -3,63 +3,7 @@ layout: page
 title: PGP key
 permalink: /pgpkey/
 ---
-
-Send me an encrypted [email](mailto://anton@tetov.se).
-
-
-```
------BEGIN PGP PUBLIC KEY BLOCK-----
-Comment: GPGTools - https://gpgtools.org
-
-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
-EKpL6y+xX8T93qVK
-=4J4B
------END PGP PUBLIC KEY BLOCK-----
-```
-Here is a [link to the key](/assets/tetov_pgp_public_key.asc). It is
+Here is a [my key](/assets/tetov_pgp_public_key.asc). It is
 also published on [pgp.mit.edu](https://pgp.mit.edu/pks/lookup?op=vindex&search=0xAAE0D9C19E500251).
+
+You can reach me at [anton@tetov.se](mailto://anton@tetov.se).
