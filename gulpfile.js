@@ -38,18 +38,18 @@ gulp.task('minify-css', ['uncss'], function() {
   .pipe(gulp.dest('./_includes'));
 });
 
-/* // Extracting the critical path CSS
+/*
+// Extracting the critical path CSS
 gulp.task('critical', ['minify-css'], function() {
   critical.generate({
-    base: '_site/',
-    src: 'index.html',  // Extract critical path CSS for index.html
-    css: ['_gulptmp/css/style.css'],
+    base: './',
+    src: '',  // Extract critical path CSS for index.html
+    css: ['assets/main.css'],
     dest: './_includes/critical.css',
     minify: true,
-    include: [/cc_/],
-    ignore: ['@font-face']
   });
-}); */
+});
+*/
 
 
 // Run all the tasks above in the following fixed sequence
