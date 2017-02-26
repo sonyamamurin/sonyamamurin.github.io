@@ -8,7 +8,7 @@ layout: default
               {% if post.hero %}
                 <div class="col-xs-12 col-sm-6 col-md-3">
                       <a href="{{ post.url | relative_url }}" class="img-desc small">
-                        <img class="image-responsive front-page" src="{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/{{ post.hero }}" alt="{{ post.title }}">
+                        <img class="image-responsive front-page" src="{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/s/{{ post.hero }}" alt="{{ post.title }}">
                         <p class="text-right">{{ post.excerpt }}</p>
                       </a>
                 </div>
