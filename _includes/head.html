@@ -4,11 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <style>{% include main.css %}</style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   {% feed_meta %}
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/apple-touch-icon-152x152.png" />
   <link rel="icon" type="image/png" href="{{ site.url }}/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="{{ site.url }}/favicon-16x16.png" sizes="16x16" />
+  <style>{% include main.css %}</style>
 </head>
