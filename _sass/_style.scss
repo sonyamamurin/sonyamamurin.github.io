@@ -2,6 +2,16 @@
 a {
   text-decoration: underline;
 
+  &.page-title {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-color;
+    }
+  }
+
   &.text-nav {
     text-decoration: none;
 
@@ -35,8 +45,13 @@ a {
   }
 }
 
+.post-hero {
+  position: relative;
+  top: -68px;
+}
+
 .hatch {
-    font-size: 75%;
+  font-size: 75%;
 }
 
 img {
@@ -55,3 +70,20 @@ img {
     }
   }
 }
+
+.leftdiv,
+.centerdiv,
+.rightdiv {
+  text-align: center;
+}
+
+
+
+@media (min-width: 768px) {
+  .leftdiv {
+    text-align: left;
+  }
+
+  .rightdiv {
+    text-align: right;
+  } }

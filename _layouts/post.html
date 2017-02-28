@@ -3,28 +3,47 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="container">
-                <header class="text-center">
-                    <a class="h2 text-nav current-page" href="{{ page.url }}">{{ page.title | escape }}</a>
-                    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-                </header>
-                  {% if page.hero %}
-                    <div class="col-md-7">
-                        <img src="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.hero }}" class="img-responsive" alt="{{ page.hero }}">
-                    </div>
-                    <div class="col-md-5">
-                        {{ content }}
-                    </div>
-                    {% for img in page.images %}
-                        <div class="col-md-6">
-                            <img src="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ img }}" class="img-responsive" alt="{{ img }}">
-                        </div>
-                    {% endfor %}
-                  {% else %}
-                    <div class="col-sm-2 col-md-3 col-lg-4"></div>
-                    <div class="col-sm-8 col-md-6 col-lg-4">
-                        {{ content }}
-                    </div>
-                    <div class="col-sm-2 col-md-3 col-lg-4"></div>
-                  {% endif %}
+      {% if page.categories contains "portfolio" %}
+        <header class="text-left">
+          <div class="col-md-7"></div>
+          <div class="col-md-5">
+            <a class="h2 text-nav current-page" href="{{ page.url }}">{{ page.title | escape }}</a>
+            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+          </div>
+        </header>
+        <div class="col-md-7">
+            <a href="#" data-featherlight="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.hero }}">
+              <img src="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.hero }}" class="img-responsive" alt="{{ page.hero }}">
+            </a>
+        </div>
+        <div class="col-md-5">
+          <article class="post-content">
+            {{ content }}
+          </article>
+        </div>
+        {% for img in page.images %}
+          <div class="col-md-6">
+            <a href="#" data-featherlight="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ img }}">
+              <img src="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ img }}" class="img-responsive" alt="{{ img }}">
+            </a>
+          </div>
+        {% endfor %}
+      {% else %}
+        <header class="text-center">
+            <a class="h2 current-page text-nav" href="{{ page.url }}">{{ page.title | escape }}</a>
+            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+        </header>
+          {% if page.image.feature %}
+            <div class="text-center center-block">
+              <img class="img-responsive" src={% if post.image.feature contains 'http' %}"{{ page.image.feature }}"{% else %}"{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/{{ post.image.feature }}"{% endif %} alt="{{ page.title }} image">
+              {% if page.image.credit %}
+                Source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+          <article class="post-content">
+            {{ content }}
+          </article>
+      {% endif %}
     </div>
 </article>

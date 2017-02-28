@@ -1,5 +1,5 @@
 ---
-layout: log-post
+layout: post
 title:  "TITLE"
 date:   2017-02-12 # Date of posting, YYYY-MM-DD
 categories: log

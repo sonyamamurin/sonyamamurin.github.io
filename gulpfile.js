@@ -35,22 +35,19 @@ gulp.task('uncss', ['comb'], function() {
 gulp.task('minify-css', ['uncss'], function() {
   return gulp.src('./_gulptmp/uncss/main.css')
   .pipe(cleanCSS({compatibility: 'ie8'}))
-  .pipe(gulp.dest('./_includes'));
+  .pipe(gulp.dest('./assets'));
 });
 
-/*
-// Extracting the critical path CSS
+/*// Extracting the critical path CSS
 gulp.task('critical', ['minify-css'], function() {
   critical.generate({
-    base: './',
-    src: '',  // Extract critical path CSS for index.html
+    base: './_site',
+    src: '. /index.html',  // Extract critical path CSS for index.html
     css: ['assets/main.css'],
     dest: './_includes/critical.css',
     minify: true,
   });
-});
-*/
-
+});*/
 
 // Run all the tasks above in the following fixed sequence
 gulp.task('css', ['sass','comb', 'uncss', 'minify-css'/*, 'critical'*/]);

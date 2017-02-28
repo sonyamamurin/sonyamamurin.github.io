@@ -5,12 +5,15 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
     {% include head.html %}
     <body>
-        {% include header.html %}
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
-        </main>
-        {% include footer.html %}
+      {% include header.html %}
+      <main class="page-content" aria-label="Content">
+          <div class="wrapper">
+              {{ content }}
+          </div>
+      </main>
+      {% include footer.html %}
+      <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+      <script src="//code.jquery.com/jquery-latest.js"></script>
+      <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: log-post
+layout: post
 title: Img2
 date: '2017-02-14 01:37:46 +0100'
 categories: log
