@@ -14,7 +14,7 @@ I use a [gulp workflow](gulpfile.js) to reduce css and [Anatol Broder's Jekyll l
 *   Figure out if I should use lower resolution images for start page. 
 
 ## License
-*   Content under `_post`, `_drafts` and `_assets` are mine and if you would like to use it in your own creative work, please contact me first.
+*   Content under `_post`, `_drafts` and `_assets/img` are mine and if you would like to use it in your own creative work, please contact me first. (Except for placeholders)
 * The site uses [Bootstrap](https://getbootstrap.com/) which is released under [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 * [Anatol Broder's Jekyll layout](http://jch.penibelst.de/) is released under [MIT](https://github.com/penibelst/jekyll-compress-html/blob/master/LICENSE)
-* All other content is free to use and modify.
+* All other content is free to use and modify under [MIT License](https://opensource.org/licenses/mit-license.php).
