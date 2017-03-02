@@ -1,14 +1,9 @@
 ---
-layout: post
+layout: log
 title: "PROJECT TITLE"
-date: 2017-02-28 #Date of project YYYY-MM-DD
+date: 2017-02-18 #Date of project YYYY-MM-DD
 categories: portfolio
-hero: hero.jpg # base path hero image (remember to add smaller version in ./assets/DATE/s/)
-images:
-- base path image 1
-- base path image 2
-- base path image 3
-- base path image 4
-- base path image 5
+image:
+  feature: placeholder-yanko-peyankov-3539.jpg
 ---
 Place images in ./assets/img/DATE

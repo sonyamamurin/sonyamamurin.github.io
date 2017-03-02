@@ -11,14 +11,15 @@ layout: page
 
       {% if post.image.feature %}
         <div class="block-center">
-          <img src=
-          {% if post.image.feature contains 'http' %}
-          "{{ post.image.feature }}"
-          {% else %}
-          "{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/{{ post.image.feature }}"
-          {% endif %}
-          alt="{{ post.title }} image" class="image-responsive">
-
+          <a href="{{ site.url }}{{ post.url }}">
+            <img src=
+            {% if post.image.feature contains 'http' %}
+            "{{ post.image.feature }}"
+            {% else %}
+            "{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/{{ post.image.feature }}"
+            {% endif %}
+            alt="{{ post.title }} image" class="image-responsive">
+          </a>
           {% if post.image.credit %}
           <p class="text-center">Source: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></p>
           {% endif %}
@@ -26,6 +27,7 @@ layout: page
       {% endif %}
 
       {% if post.excerpt %}
+        <br />
         <div>
             {{ post.excerpt }}
         </div>

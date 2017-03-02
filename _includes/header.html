@@ -1,10 +1,10 @@
 <header class="site-header" role="banner">
     <div class="container-fluid">
-        <div class="h1 container-fluid">
-          <div class="col-sm-6 leftdiv">
+        <div class="container-fluid">
+          <div class="col-sm-6 leftdiv h1">
             <a href="/" class="page-title">Anton Tetov</a>
           </div>
-          <div class="col-sm-6 rightdiv">
+          <div class="col-sm-6 rightdiv h2">
             <a href="/" class="text-nav{% if page.url == "/" %} current-page{% endif %}">Portfolio</a>
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
                 {% for p in navigation_pages %}
