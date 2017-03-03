@@ -35,7 +35,8 @@ layout: default
             <a class="h2 current-page text-nav" href="{{ page.url }}">{{ page.title | escape }}</a>
             <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
         </header>
-          {% if page.image.feature %}              <img class="img-responsive" src={% if post.image.feature contains 'http' %}"{{ page.image.feature }}"{% else %}"{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.image.feature }}"{% endif %} alt="{{ page.title }} image">
+          {% if page.image.feature %}
+           <img class="img-responsive" src={% if post.image.feature contains 'http' %}"{{ page.image.feature }}"{% else %}"{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.image.feature }}"{% endif %} alt="{{ page.title }}">
               {% if page.image.credit %}
                 Source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
               {% endif %}

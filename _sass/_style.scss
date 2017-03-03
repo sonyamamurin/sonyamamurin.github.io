@@ -86,4 +86,11 @@ img {
 
   .rightdiv {
     text-align: right;
-  } }
+  }
+}
+
+div {
+  &.resizing-text {
+    font-size: 2.5vw;
+  }
+}
