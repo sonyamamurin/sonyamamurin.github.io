@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "PROJECT TITLE"
 date: 2017-02-18 #Date of project YYYY-MM-DD
 categories: portfolio
