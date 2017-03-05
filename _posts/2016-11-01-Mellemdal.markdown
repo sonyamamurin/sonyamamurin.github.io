@@ -6,10 +6,13 @@ categories: portfolio
 excerpt: "Plan for city block Mellemdal"
 hero: plan-margaretedal-rita-mellem-husene-illustrator.jpg
 images:
+- sektion.jpg
 - Diagram-1.jpg
 - Diagram-2.jpg
 - Diagram-3.jpg
+- Kollage-1.jpg
 - Kollage-2.jpg
 - Kollage-3.jpg
+- sitplan.jpg
 ---
 City planning project with Linus Hedrén and [Anton Köhler](http://www.kohlerarkitektur.se/) titled Mellemdal.
