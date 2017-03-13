@@ -11,20 +11,17 @@ layout: default
             <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
           </header>
 
-            {% if post.image.feature %}
+            {% if post.image %}
               <div class="block-center">
                 <a href="{{ site.url }}{{ post.url }}">
                   <img src=
-                  {% if post.image.feature contains 'http' %}
-                  "{{ post.image.feature }}"
+                  {% if post.image contains 'http' %}
+                  "{{ post.image }}"
                   {% else %}
-                  "{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/{{ post.image.feature }}"
+                  "{{ site.url }}/assets/img/{{ post.date | date: "%Y-%m-%d" }}/{{ post.image }}"
                   {% endif %}
                   alt="{{ post.title }} image" class="image-responsive">
                 </a>
-                {% if post.image.credit %}
-                <p class="text-center">Source: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></p>
-                {% endif %}
               </div>
             {% endif %}
 

@@ -12,8 +12,8 @@ layout: default
           </div>
         </header>
         <div class="col-md-7">
-            <a href="#" data-featherlight="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.hero }}">
-              <img src="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.hero }}" class="img-responsive" alt="{{ page.hero }}">
+            <a href="#" data-featherlight="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.image }}">
+              <img src="/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.image }}" class="img-responsive" alt="{{ page.title }}">
             </a>
         </div>
         <div class="col-md-5">
@@ -35,11 +35,8 @@ layout: default
             <a class="h2 current-page text-nav" href="{{ page.url }}">{{ page.title | escape }}</a>
             <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
         </header>
-          {% if page.image.feature %}
-           <img class="img-responsive" src={% if post.image.feature contains 'http' %}"{{ page.image.feature }}"{% else %}"{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.image.feature }}"{% endif %} alt="{{ page.title }}">
-              {% if page.image.credit %}
-                Source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
-              {% endif %}
+          {% if page.image %}
+           <img class="img-responsive" src={% if post.image contains 'http' %}"{{ page.image }}"{% else %}"{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m-%d" }}/{{ page.image }}"{% endif %} alt="{{ page.title }}">
           {% endif %}
               <br />
               <article class="post-content">

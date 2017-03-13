@@ -4,7 +4,7 @@ title:  "Revit/Rhino workshop"
 date: 2016-11-09
 categories: portfolio
 excerpt: "Revit/Rhino workshop"
-hero: hero.jpg
+image: hero.jpg
 images:
 - A101-Planer.jpg
 - A103-Sektion-A-A.jpg

@@ -4,7 +4,7 @@ title: "Paneling tools workshop"
 date: 2016-11-07
 categories: portfolio
 excerpt: "Paneling tools workshop"
-hero: 1.jpg
+image: 1.jpg
 images:
 - 2.jpg
 - 3.jpg

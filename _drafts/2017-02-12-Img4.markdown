@@ -3,10 +3,7 @@ layout: post
 title:  "Img4"
 date:   2017-02-12 01:37:46 +0100
 categories: log
-image:
-  feature: placeholder-cat-mapper-max-ogden-202782.jpg
-  credit: Test
-  creditlink: https://google.com/
+image: placeholder-cat-mapper-max-ogden-202782.jpg
 ---
 Is this I forgot.
 

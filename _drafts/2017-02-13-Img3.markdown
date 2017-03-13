@@ -3,10 +3,7 @@ layout: post
 title:  "Img3"
 date:   2017-02-13 01:37:46 +0100
 categories: log
-image:
-  feature: placeholder-erik-jan-leusink-172568.jpg
-  credit: Test
-  creditlink: https://google.com/
+image: placeholder-erik-jan-leusink-172568.jpg
 ---
 Don't even ask.
 
