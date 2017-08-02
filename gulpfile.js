@@ -1,10 +1,14 @@
 // From https://novelist.xyz/tech/performant-jekyll-site-with-gulp-cloudflare/
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var csscomb = require('gulp-csscomb');
-var uncss = require('gulp-uncss');
 var cleanCSS = require('gulp-clean-css');
-var critical = require('critical');
+//var critical = require('critical');
+var csscomb = require('gulp-csscomb');
+var gutil = require('gulp-util');
+var imagemin = require('gulp-imagemin');
+var postcss = require('gulp-postcss');
+var run = require('gulp-run');
+var sass = require('gulp-sass');
+var uncss = require('postcss-uncss');
 
 // Compiling the CSS from sass
 gulp.task('sass', function () {
@@ -22,13 +26,12 @@ gulp.task('comb', ['sass'], function() {
 
 // Removing unused classes in CSS
 gulp.task('uncss', ['comb'], function() {
-  return gulp.src('./_gulptmp/comb/main.css')
-    .pipe(uncss({
-    html: ['./_site/**/*.html'],
-    ignore: [/fp/],
-    timeout: 1000
-  }))
-  .pipe(gulp.dest('./_gulptmp/uncss'));
+    var plugins = [
+        uncss({html: ['./_site/**/*.html']})
+    ]
+    return gulp.src('./_gulptmp/comb/main.css')
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('./_gulptmp/uncss'));
 });
 
 // Removing tabs and spaces in CSS
@@ -49,5 +52,15 @@ gulp.task('critical', ['minify-css'], function() {
   });
 });*/
 
-// Run all the tasks above in the following fixed sequence
-gulp.task('css', ['sass','comb', 'uncss', 'minify-css'/*, 'critical'*/]);
+gulp.task('imagemin', function() {
+    return gulp.src('assets/img/**/*')
+        .pipe(imagemin({
+            progressive: true
+        }))
+    .pipe(gulp.dest('assets/img/'))
+});
+
+// Run all css tasks above in the following fixed sequence
+gulp.task('build-css', ['sass','comb', 'uncss', 'minify-css']);
+
+gulp.task('default', ['build-css', 'imagemin']);

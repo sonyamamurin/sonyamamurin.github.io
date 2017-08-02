@@ -17,13 +17,16 @@
   },
   "homepage": "https://github.com/sonyamamurin/sonyamamurin.github.io#readme",
   "devDependencies": {
-    "critical": "^0.8.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.3",
     "gulp-csscomb": "^3.0.8",
     "gulp-debug": "^3.1.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-run": "^1.7.1",
     "gulp-sass": "^3.1.0",
-    "gulp-uncss": "^1.0.6"
+    "postcss-uncss": "^0.15.0",
+    "uncss": "^0.15.0"
   },
   "dependencies": {}
 }
