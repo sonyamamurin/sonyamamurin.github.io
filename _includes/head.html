@@ -6,10 +6,10 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   {% feed_meta %}
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.url }}/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url }}/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ url }}/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="{{ url }}/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ url }}/favicon-16x16.png" sizes="16x16" />
   <style>{% include main.css %}</style>
   {% if page.categories contains "portfolio" %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.css" integrity="sha256-4JAn9pTSLsMigb/pMsQIsVuZVBIuzKzovU6ofF5HRcI=" crossorigin="anonymous" />

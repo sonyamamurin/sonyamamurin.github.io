@@ -53,13 +53,14 @@ gems:
     - jekyll-sitemap
     - jekyll-feed
     - jekyll-seo-tag
-    - jemoji
 exclude:
     - Gemfile
     - Gemfile.lock
     - node_modules
     - gulpfile.js
+    - package-lock.json
     - package.json
+    - README.md
     - .scss-lint.yml
 # Compress settings
 compress_html:
