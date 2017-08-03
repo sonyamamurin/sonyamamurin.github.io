@@ -3,7 +3,6 @@ _site
 .jekyll
 .jekyll-metadata
 .sass-cache
-Gemfile.lock
 node_modules
 npm-debug-log
 _gulptmp
