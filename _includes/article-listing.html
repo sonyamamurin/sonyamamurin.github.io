@@ -8,7 +8,7 @@
     <a href="{{ post.url | relative_url }}" class="img-desc small">
         <img class="img-responsive front-page" src="{{ site.assets-url }}{{ post.url }}{{ post.first-image }}" alt="{{ post.title }}">
         {% if post.categories contains 'portfolio' %}
-            <p>{{ post.excerpt }}</p>
+            <p class="caption">{{ post.excerpt }}</p>
         {% endif %}
     </a>
     {% if post.categories contains 'blog' %}
