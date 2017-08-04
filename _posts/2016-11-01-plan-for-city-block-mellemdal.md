@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Plan for city block Mellemdal"
-date: 2016-11-01
 categories: portfolio
 excerpt: "Plan for city block Mellemdal"
-image: plan-margaretedal-rita-mellem-husene-illustrator.jpg
+first-image: plan-margaretedal-rita-mellem-husene-illustrator.jpg
 images:
 - sitplan.jpg
 - Diagram-1.jpg

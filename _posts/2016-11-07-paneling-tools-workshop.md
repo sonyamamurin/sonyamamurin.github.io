@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Paneling tools workshop"
-date: 2016-11-07
 categories: portfolio
 excerpt: "Paneling tools workshop"
-image: 1.jpg
+first-image: 1.jpg
 images:
 - 2.jpg
 - 3.jpg

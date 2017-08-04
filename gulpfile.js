@@ -38,7 +38,7 @@ gulp.task('uncss', ['comb'], function() {
 gulp.task('minify-css', ['uncss'], function() {
   return gulp.src('./_gulptmp/uncss/main.css')
   .pipe(cleanCSS({compatibility: 'ie8'}))
-  .pipe(gulp.dest('./assets'));
+  .pipe(gulp.dest('./_includes'));
 });
 
 /*// Extracting the critical path CSS

@@ -1,7 +1,4 @@
-<footer class="site-footer no-underline">
-    <div class="container-fluid">
-    <br>
-        <div class="text-center small text-nav">
+<footer class="small text-center">
             {% if site.twitter.username %}
                 <a class="text-nav" href="https://twitter.com/{{ site.twitter.username }}">twitter</i></a>
             {% endif %}
@@ -17,10 +14,4 @@
             {% if site.pgpkey_url %}
                 <a class="text-nav" href="{{ url }}/{{ site.pgpkey_url }}">pgp public key</a>
             {% endif %}
-        </div>
-    </div>
-  {% if page.categories contains "portfolio" %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.js" integrity="sha256-kpeEISoLEV/PTvAKcPYrYsUMHr8eLhPcg8UX0GP8aKA=" crossorigin="anonymous"></script>
-  {% endif %}
 </footer>

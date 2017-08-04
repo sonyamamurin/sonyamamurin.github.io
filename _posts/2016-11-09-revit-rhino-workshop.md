@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  "Revit/Rhino workshop"
-date: 2016-11-09
 categories: portfolio
 excerpt: "Revit/Rhino workshop"
-image: hero.jpg
+first-image: hero.jpg
 images:
 - A101-Planer.jpg
 - A103-Sektion-A-A.jpg

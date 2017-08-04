@@ -2,16 +2,6 @@
 a {
   text-decoration: underline;
 
-  &.page-title {
-    text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $link-color;
-    }
-  }
-
   &.text-nav {
     text-decoration: none;
 
@@ -23,7 +13,6 @@ a {
   }
 
   &.img-desc {
-    font-style: italic;
     text-decoration: none;
 
     &:hover,
@@ -31,7 +20,7 @@ a {
     &:active {
       color: $gray-light;
     }
-}
+  }
 
   &.current-page {
     background-color: $my-black-color;
@@ -45,52 +34,16 @@ a {
   }
 }
 
-.post-hero {
-  position: relative;
-  top: -68px;
-}
-
 .hatch {
   font-size: 75%;
 }
 
 img {
-  display: block;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4px;
-  max-width: 100%;
-
   &.front-page {
     &:hover,
     &:focus,
     &:active {
       opacity: .6;
     }
-  }
-}
-
-.leftdiv,
-.centerdiv,
-.rightdiv {
-  text-align: center;
-}
-
-
-
-@media (min-width: 768px) {
-  .leftdiv {
-    text-align: left;
-  }
-
-  .rightdiv {
-    text-align: right;
-  }
-}
-
-div {
-  &.resizing-text {
-    font-size: 2.5vw;
   }
 }

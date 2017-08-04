@@ -1,19 +1,14 @@
-<header class="site-header" role="banner">
-    <div class="container-fluid">
-        <div class="container-fluid">
-          <div class="col-sm-6 leftdiv h1">
-            <a href="/" class="page-title">Anton Tetov</a>
-          </div>
-          <div class="col-sm-6 rightdiv h2">
-            <a href="/" class="text-nav{% if page.url == "/" %} current-page{% endif %}">Portfolio</a>
+<header class="text-center">
+    <p class="h1">
+        <a class="text-nav" href="/">Anton Tetov</a>
+    </p>
+    <p class="h2">
+        <a href="/" class="text-nav{% if page.url == "/" %} current-page{% endif %}">Portfolio</a>
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-                {% for p in navigation_pages %}
-                    {% if p.navigation_weight %}
-                         <span class="hatch">▨</span> <a href="{{ p.url }}" class="text-nav{% if p.url == page.url %} current-page{% endif %}">
-                        {{ p.title }}</a>
-                    {% endif %}
-                {% endfor %}
-          </div
-     </div>
-    </div>
+            {% for p in navigation_pages %}
+                {% if p.navigation_weight %}
+                    <span class="hatch">▨</span> <a href="{{ p.url }}" class="text-nav{% if p.url == page.url %} current-page{% endif %}">{{ p.title }}</a>
+                {% endif %}
+            {% endfor %}
+    </p>
 </header>

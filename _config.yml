@@ -14,20 +14,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Anton Tetov Portfolio
-email: anton@tetov.se
 description: portfolio for architecture student
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tetov.se" # the base hostname & protocol for your site, e.g. http://example.com
-twitter:
-  username: tetov2
-author:
-  twitter: tetov2
+assets-url: "https://assets.tetov.se"
 
+email: anton@tetov.se
+twitter:
+    username: tetov2
+author:
+    twitter: tetov2
 github_username: tetov
 tumblr_username: tetov
 pgpkey_url: "pgpkey"
-
-logo:
 
 social:
   links:
@@ -39,10 +39,10 @@ social:
 google_site_verification: Uz3ipYQgkud5NHu9JC-t-AjF2N3lI5eXDKJ0XsuIgXc
 
 navigation:
-- about
-- log
+    - about
+    - log
 
-permalink: /:categories/:title.html
+permalink: /:title/
 
 # Build settings
 sass:
@@ -64,5 +64,5 @@ exclude:
     - .scss-lint.yml
 # Compress settings
 compress_html:
-  comments: ["<!-- ", " -->"]
-  blanklines: false
+    comments: ["<!-- ", " -->"]
+    blanklines: false

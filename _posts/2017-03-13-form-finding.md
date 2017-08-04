@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "Form finding for bachelor project"
-date:   2017-03-13 # Date of posting, YYYY-MM-DD
-categories: log
-image: weaving-5-rotate.gif # Either full URL to external pic or base path (put image in ./assets/DATE/)
+categories: blog
+first-image: weaving-5-rotate.gif
 ---
 In this project we use Grasshopper to develop forms, I have tried to model agents' movement in a vector field – I use points which I run curves through.
 
