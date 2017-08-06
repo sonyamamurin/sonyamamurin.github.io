@@ -47,9 +47,6 @@ navigation:
 permalink: /:title/
 
 # Build settings
-sass:
-    sass_dir: _sass
-    style: compressed
 markdown: kramdown
 gems:
     - jekyll-sitemap
@@ -63,7 +60,6 @@ exclude:
     - package-lock.json
     - package.json
     - README.md
-    - .scss-lint.yml
 # Compress settings
 compress_html:
     comments: ["<!-- ", " -->"]

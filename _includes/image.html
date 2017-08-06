@@ -1,1 +1,1 @@
-<img itemprop="image" class="img-responsive" src="{{ site.assets-url }}{{ page.url }}{{ include.file }}" alt="{% if include.description %}{{ include.description }}">{{ include.description }}{% else %}{{ include.file }}">{% endif %}
+<img class="img-responsive include" src="{% unless include.external %}{{ site.assets-url }}{{ page.url }}{% endunless %}{{ include.file }}" alt="{% if include.description %}{{ include.description }}">{{ include.description }}{% else %}{{ include.file }}">{% endif %}

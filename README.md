@@ -4,7 +4,9 @@ This is a site for my portfolio. Built using [Jekyll](https://jekyllrb.com/) and
 
 I use a [gulp workflow](gulpfile.js) to reduce css and [Anatol Broder's Jekyll layout](http://jch.penibelst.de/) to minimize HTML.
 
-`gulp css && bundle exec jekyll serve --watch`
+`bundle install && npm install`
+
+`gulp && bundle exec jekyll serve --watch`
 
 ## TODO
 *   ~~Insert actual projects~~ Insert more actual projects

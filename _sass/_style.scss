@@ -17,6 +17,12 @@ a {
   }
 }
 
+img {
+  &.include {
+    width: 100%;
+  }
+}
+
 .portfolio {
   &:hover,
   &:focus,
