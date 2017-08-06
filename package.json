@@ -21,12 +21,13 @@
     "gulp-clean-css": "^3.0.3",
     "gulp-csscomb": "^3.0.8",
     "gulp-debug": "^3.1.0",
-    "gulp-imagemin": "^3.3.0",
     "gulp-postcss": "^7.0.0",
     "gulp-run": "^1.7.1",
     "gulp-sass": "^3.1.0",
     "postcss-uncss": "^0.15.0",
     "uncss": "^0.15.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
 }

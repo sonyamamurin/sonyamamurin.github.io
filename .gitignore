@@ -5,4 +5,4 @@ _site
 .sass-cache
 node_modules
 npm-debug-log
-_gulptmp
+_sass/build
