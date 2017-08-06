@@ -2,5 +2,14 @@
 layout: default
 ---
 {% for post in site.categories.blog %}
-   {% include article-listing.html %}
+    <article>
+        <header>
+            <a href="{{ site.url }}{{ post.url }}" class="text-nav h3" title="{{ post.title }}">{{post.title }}</a>
+            <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="d      atePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+        </header>
+        {{ post.content }}
+    </article>
+    {% unless forloop.last %}
+        <div class="logo separator"></div>
+    {% endunless %}
 {% endfor %}

@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-<article class="post">
-    <a class="h3 text-nav current-page" href="{{ page.url }}">{{ page.title | escape }}</a>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-    {% if page.first-image %}
-        <img src="{{ site.assets-url }}{{ page.url }}{{ page.first-image }}" class="img-responsive" alt="{{ page.title }}">
-    {% endif %}
-    {{ content }}
+<article>
+    <header>
+        <a class="h3 text-nav current-page" href="{{ page.url }}">{{ page.title | escape }}</a>
+        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    </header>
+        {{ content }}
 </article>

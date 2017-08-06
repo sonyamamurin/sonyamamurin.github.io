@@ -2,10 +2,11 @@
 layout: post
 title:  "Revit/Rhino workshop"
 categories: portfolio
-first-image: hero.jpg
 ---
-Rhino/Revit workshop, a group assignment with Vera Swahn and Susanne Bengtsson.
+{% include image.html file="hero.jpg" %}
 
+
+Rhino/Revit workshop, a group assignment with Vera Swahn and Susanne Bengtsson.
 
 Squint to picture the revit-render inside the photo montage with the Vray-render.
 

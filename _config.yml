@@ -13,18 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Anton Tetov Portfolio
+title: Anton Tetov
 description: portfolio for architecture student
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tetov.se" # the base hostname & protocol for your site, e.g. http://example.com
 assets-url: "https://assets.tetov.se"
 
-email: anton@tetov.se
-twitter:
-    username: tetov2
+logo: /logo.svg
+
 author:
     twitter: tetov2
+
+email: anton@tetov.se
+twitter_username: tetov2
 github_username: tetov
 tumblr_username: tetov
 pgpkey_url: "pgpkey"
@@ -34,7 +36,6 @@ social:
     - https://twitter.com/tetov2
     - https://www.facebook.com/ntntvjhnssn
     - https://github.com/tetov
-    - https://keybase.io/sonyamamurin
 
 google_site_verification: Uz3ipYQgkud5NHu9JC-t-AjF2N3lI5eXDKJ0XsuIgXc
 

@@ -2,5 +2,15 @@
 layout: default
 ---
 {% for post in site.categories.portfolio %}
-    {% include article-listing.html %}
+    <div class="portfolio">
+        <a class="front-page text-nav" href="{{ post.url | relative_url }}">
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            <p class="text-right">
+                {{ post.title }}
+            </p>
+        </a>
+    </div>
+    {% unless forloop.last %}
+        <div class="logo separator"></div>
+    {% endunless %}
 {% endfor %}

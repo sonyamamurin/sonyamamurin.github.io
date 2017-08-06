@@ -2,9 +2,10 @@
 layout: post
 title: "Plan for city block Mellemdal"
 categories: portfolio
-excerpt: "Plan for city block Mellemdal"
-first-image: plan-margaretedal-rita-mellem-husene-illustrator.jpg
 ---
+{% include image.html file="plan-margaretedal-rita-mellem-husene-illustrator.jpg" %}
+
+
 City planning project with Linus Hedrén and [Anton Köhler](http://www.kohlerarkitektur.se/) titled Mellemdal.
 
 Proposal for Margaretedal in Lund with a street car station, housing, square and bars and resturants on top of existing garage.

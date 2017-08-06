@@ -8,42 +8,33 @@ a {
     &:hover,
     &:focus,
     &:active {
-      font-style: italic;
-    }
-  }
-
-  &.img-desc {
-    text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &:active {
       color: $gray-light;
     }
   }
 
   &.current-page {
-    background-color: $my-black-color;
-    color: $my-white-color;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $my-white-color;
-      }
+    font-style: italic;
   }
+}
+
+.portfolio {
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: .6;
+  }
+}
+
+.logo {
+  background-image: url('/logo.svg');
+  background-size: cover;
+  padding: 1.5em 0;
+}
+
+.separator {
+  height: 2 rem;
 }
 
 .hatch {
   font-size: 75%;
-}
-
-img {
-  &.front-page {
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: .6;
-    }
-  }
 }
