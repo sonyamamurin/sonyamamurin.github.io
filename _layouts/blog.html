@@ -2,11 +2,11 @@
 layout: default
 ---
 {% for post in site.categories.blog %}
-    <article>
-        <header>
-            <a href="{{ site.url }}{{ post.url }}" class="text-nav h3" title="{{ post.title }}">{{post.title }}</a>
-            <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="d      atePublished">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+    <article itemscope itemtype="http://schema.org/Article">
+        <header itemprop="name">
+            <a class="text-nav h3" href="{{ post.url }}" title="{{ post.title }}">{{post.title }}</a>
         </header>
+        <time class="small" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
         {{ post.content }}
     </article>
     {% unless forloop.last %}
