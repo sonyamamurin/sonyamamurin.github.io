@@ -1,7 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about/
-navigation_weight: 3 
+navigation_weight: 3
 ---
-aspiring architect - year three @ lund university school of architecture
+Aspiring architect - year four at Lund University, School of Architecture
+
+Living with friends and cat in Malmö.
