@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Plan for city block Mellemdal"
 categories: portfolio
 ---

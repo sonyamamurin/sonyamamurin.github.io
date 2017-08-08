@@ -20,6 +20,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tetov.se" # the base hostname & protocol for your site, e.g. http://example.com
 assets-url: "https://assets.tetov.se"
 
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "post"
+
 logo: /logo.svg
 
 author:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Form finding for bachelor project"
 categories: blog
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Paneling tools workshop"
 categories: portfolio
 ---

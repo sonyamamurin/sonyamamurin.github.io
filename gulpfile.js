@@ -1,42 +1,49 @@
 /*jshint node:true */
 "use strict";
 
-var spawn = require('child_process').spawn,
+var execSync = require('child_process').execSync,
     gulp = require('gulp'),
     gutil = require('gulp-util'),
     csswring = require ('csswring'),
     postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),
     sorting = require('postcss-sorting'),
+    spawn = require('child_process').spawn,
     uncss = require('postcss-uncss');
 
 var paths = {
-    sass_source: '_sass/main.scss',
+    buildScript: 'build.sh',
+    sassSource: '_sass/main.scss',
     bootstrap: 'node_modules/bootstrap-sass/assets/stylesheets/',
-    build: '_sass/build/',
     html: '_site/**/*.html',
     dest: '_includes/'
 };
 
-// Remove unused classes (uncss), minifiy (csswring) and comb code (csscomb)
-gulp.task('css', function() {
+// first build so uncss has html to work with
+gulp.task('buildJekyll', function() {
+    execSync(paths.buildScript, { stdio: 'inherit' } );
+});
+
+// Compile SASS, remove unused classes (uncss), minifiy (csswring) and comb code (csscomb)
+gulp.task('css', ['buildJekyll'], function() {
     var plugins = [
         uncss({html: [ paths.html ]}),
         csswring({ removeAllComments: true }),
         sorting()
     ];
-    return gulp.src( paths.sass_source )
+    return gulp.src( paths.sassSource )
         .pipe(sass({ includePaths: paths.bootstrap }))
         .pipe(postcss(plugins)).on('error', gutil.log)
         .pipe(gulp.dest( paths.dest ));
 });
 
-gulp.task('jekyll', function() {
-    return spawn('bundle', ['exec', 'jekyll', 'serve', '--watch'], { stdio: 'inherit' });
+// Serve and watch but no initial build
+gulp.task('serveJekyll', ['css'], function() {
+    return spawn('bundle', ['exec', 'jekyll', 'serve', '--watch' ], { stdio: 'inherit' });
 });
 
-// Run all css tasks above in the following fixed sequence
-gulp.task('default', ['css', 'jekyll'], function() {
+// build site, compile and optimize css, serve site, watch for changes
+gulp.task('default', ['buildJekyll', 'css', 'serveJekyll' ], function() {
     gulp.watch(['_sass/**/*.scss'], function() {
         gulp.run('css');
     });

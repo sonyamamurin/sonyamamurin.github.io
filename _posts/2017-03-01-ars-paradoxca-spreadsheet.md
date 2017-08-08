@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Ars Paradoxica deciphering spreadsheet"
 categories: blog
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Magnetic fields update"
 categories: blog
 ---
