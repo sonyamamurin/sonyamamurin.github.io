@@ -1,27 +1,30 @@
 {
-  "name": "sonyamamurin.github.io",
-  "version": "1.0.0",
-  "description": "Anton T Johansson portfolio",
+  "name": "tetov.github.io",
+  "version": "2.0.0",
+  "description": "Anton Tetov portfolio",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sonyamamurin/sonyamamurin.github.io.git"
+    "url": "https://github.com/tetov/tetov.github.io.git"
   },
-  "author": "Anton T Johansson <anton@tetov.se>",
-  "license": "ISC",
+  "author": "Anton Tetov Johansson <anton@tetov.se>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sonyamamurin/sonyamamurin.github.io/issues"
+    "url": "https://github.com/tetov/tetov.github.io/issues"
   },
   "homepage": "https://github.com/sonyamamurin/sonyamamurin.github.io#readme",
   "devDependencies": {
     "csswring": "^6.0.0",
     "gulp": "^3.9.1",
+    "gulp-debug": "^3.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
     "postcss-csscomb": "^1.0.2",
+    "postcss-sorting": "^3.0.1",
     "postcss-uncss": "^0.15.0",
     "uncss": "^0.15.0"
   },

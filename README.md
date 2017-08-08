@@ -1,19 +1,17 @@
 # Anton Tetov Portfolio
 
-This is a site for my portfolio. Built using [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/).
+This is a site for my portfolio. Built using [Jekyll](https://jekyllrb.com/) and [Bootstrap for Sass](https://github.com/twbs/bootstrap-sass).
 
-I use a [gulp workflow](gulpfile.js) to reduce css and [Anatol Broder's Jekyll layout](http://jch.penibelst.de/) to minimize HTML.
+I use a [gulp workflow](gulpfile.js) to optimize css and [Anatol Broder's Jekyll layout](http://jch.penibelst.de/) to minimize HTML.
 
+## Set up environment
 `bundle install && npm install`
 
+## Build
 `gulp && bundle exec jekyll serve --watch`
 
-## TODO
-*   ~~Insert actual projects~~ Insert more actual projects
-
 ## License
-*   Content under `_post`, `_drafts` and `_assets` are mine and if you would like to use it in your own creative work, please contact me first.
-  * Excluding images prepended with `placeholder_` which are from [Unsplash](https://unsplash.com/) and  [licensed](https://unsplash.com/license) under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
-* The site uses [Bootstrap](https://getbootstrap.com/), released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
+*   Content under `_post`, images in the repo and served from https://assets.tetov.se/are mine and if you would like to use it in your own creative work, please contact me first.
+* The site uses [Bootstrap for Sass](https://github.com/twbs/bootstrap-sass), released under the [MIT license](https://github.com/twbs/bootstrap-sass/blob/master/LICENSE).
 * [Anatol Broder's Jekyll layout](http://jch.penibelst.de/), released under the [MIT license](https://github.com/penibelst/jekyll-compress-html/blob/master/LICENSE)
 * All other content is free to use and modify under the [MIT license](https://opensource.org/licenses/MIT).

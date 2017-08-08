@@ -1,8 +1,12 @@
 ---
 layout: post
 title:  "TITLE"
-date:   2017-02-26 # Date of posting, YYYY-MM-DD
-categories: log
-image: # Either full URL to external pic or base path (put image in ./assets/DATE/)
+categories: blog
 ---
+{% include image.html file="featured-image.jpg" description="Remove this arg if no caption" %}
+
+
 Remember to add credit if not own image!
+{% include image.html file="additional-image.jpg" description="Remove this arg if no caption" %}
+
+Images goes into assets.tetov.se/title/
