@@ -46,7 +46,5 @@ gulp.task('serveJekyll', ['css'], function() {
 
 // build site, compile and optimize css, serve site, watch for changes
 gulp.task('default', ['buildJekyll', 'css', 'serveJekyll' ], function() {
-    gulp.watch(['_sass/**/*.scss'], function() {
-        gulp.run('css');
-    });
+    gulp.watch(['_sass/**/*.scss'], ['css']);
 });

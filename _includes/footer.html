@@ -2,16 +2,19 @@
     {% if site.twitter_username %}
         <a class="text-nav" href="https://twitter.com/{{ site.twitter_username }}" rel="me">twitter</a>
     {% endif %}
-    {% if site.email %}
-        <a class="text-nav" href="mailto:{{ site.email }}">email</a>
-    {% endif %}
     {% if site.tumblr_username %}
         <a class="text-nav" href="http://{{ site.tumblr_username }}.tumblr.com/" rel="me">tumblr</a>
+    {% endif %}
+    {% if site.instagram_username %}
+        <a class="text-nav" href="https://instagram.com/{{ site.instagram_username }}" rel="me">instagram</a>
     {% endif %}
     {% if site.github_username %}
         <a class="text-nav" href="https://github.com/{{ site.github_username }}" rel="me">github</a>
     {% endif %}
+    {% if site.email %}
+        <a class="text-nav" href="mailto:{{ site.email }}">email</a>
+    {% endif %}
     {% if site.pgpkey_url %}
         <a class="text-nav" href="{{ url }}/{{ site.pgpkey_url }}">pgp public key</a>
-{% endif %}
+    {% endif %}
 </footer>
