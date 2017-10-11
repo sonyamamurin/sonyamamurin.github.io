@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sonyamamurin/sonyamamurin.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "csswring": "^6.0.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0",

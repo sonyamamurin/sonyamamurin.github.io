@@ -1,7 +1,8 @@
 /*jshint node:true */
 "use strict";
 
-var execSync = require('child_process').execSync,
+var autoprefixer = require('autoprefixer'),
+    execSync = require('child_process').execSync,
     gulp = require('gulp'),
     gutil = require('gulp-util'),
     csswring = require ('csswring'),
@@ -29,6 +30,7 @@ gulp.task('css', ['buildJekyll'], function() {
     var plugins = [
         uncss({html: [ paths.html ]}),
         csswring({ removeAllComments: true }),
+        autoprefixer(),
         sorting()
     ];
     return gulp.src( paths.sassSource )
