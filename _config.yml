@@ -18,7 +18,7 @@ description: portfolio for architecture student
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tetov.se" # the base hostname & protocol for your site, e.g. http://example.com
-assets-url: "https://assets.tetov.se"
+assets-url: "https://tetov-assets.nyc3.digitaloceanspaces.com"
 
 defaults:
     -
@@ -38,6 +38,7 @@ email: anton@tetov.se
 twitter_username: tetov2
 github_username: tetov
 tumblr_username: tetov
+instagram_username: antontetov
 pgpkey_url: "pgpkey"
 
 social:
