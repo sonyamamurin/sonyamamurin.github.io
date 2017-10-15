@@ -1,7 +1,5 @@
 // Override boostrap variables here
+$link-color: darken(#000, 20%);
+$current-page-color: #fc3;
 
-$my-black-color: #000;
-$my-white-color: #fff;
-
-$link-color: lighten($my-black-color, 20%);
-$link-hover-color: lighten($link-color, 20%);
+$nav-box-bg: rgba(255, 255, 255, .6);

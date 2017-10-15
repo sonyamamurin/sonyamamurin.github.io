@@ -14,7 +14,7 @@ a {
   }
 
   &.current-page {
-    font-style: italic;
+    color: $current-page-color;
   }
 }
 
@@ -33,15 +33,20 @@ img {
 }
 
 .logo {
-  background-image: url('/logo.svg');
+  background-image: url('/texoot.svg');
   padding: .75em 0;
 }
 
 .separator {
-  height: 4rem;
+  height: 2rem;
 }
 
 .hatch {
   font-size: .8em;
+  padding: 0 .2em;
   vertical-align: middle;
+}
+
+.nav-box {
+  background-color: $nav-box-bg;
 }
