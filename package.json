@@ -17,17 +17,18 @@
   },
   "homepage": "https://github.com/sonyamamurin/sonyamamurin.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
-    "csswring": "^6.0.0",
+    "autoprefixer": "^7.1.5",
+    "bootstrap": "^4.0.0-beta",
+    "csswring": "^6.0.1",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
-    "postcss-sorting": "^3.0.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-sorting": "^3.0.2",
     "postcss-uncss": "^0.15.0",
     "uncss": "^0.15.0"
-  },
-  "dependencies": {
-    "bootstrap-sass": "^3.3.7"
   }
 }

@@ -7,6 +7,7 @@ var autoprefixer = require('autoprefixer'),
     gutil = require('gulp-util'),
     csswring = require ('csswring'),
     postcss = require('gulp-postcss'),
+    postcssFlexbugsFixes = require('postcss-flexbugs-fixes'),
     sass = require('gulp-sass'),
     sorting = require('postcss-sorting'),
     spawn = require('child_process').spawn,
@@ -15,7 +16,7 @@ var autoprefixer = require('autoprefixer'),
 var paths = {
     buildScript: 'build.sh',
     sassSource: '_sass/main.scss',
-    bootstrap: 'node_modules/bootstrap-sass/assets/stylesheets/',
+    bootstrap: 'node_modules/bootstrap/scss/',
     html: '_site/**/*.html',
     dest: '_includes/'
 };
@@ -30,6 +31,7 @@ gulp.task('css', ['buildJekyll'], function() {
     var plugins = [
         uncss({html: [ paths.html ]}),
         csswring({ removeAllComments: true }),
+        postcssFlexbugsFixes(),
         autoprefixer(),
         sorting()
     ];
