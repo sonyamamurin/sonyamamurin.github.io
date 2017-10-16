@@ -2,13 +2,13 @@
 layout: default
 ---
 {% for post in site.categories.portfolio %}
-    <article class="portfolio" itemscope itemtype="http://schema.org/Article">
-        <a class="front-page text-nav" href="{{ post.url | relative_url }}">
+    <article class="portfolio text-nav" itemscope itemtype="http://schema.org/Article">
+        <a class="front-page" href="{{ post.url | relative_url }}">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
             <span itemprop="name">{{ post.title }}</span>
         </a>
     </article>
     {% unless forloop.last %}
-        <div class="logo separator"></div>
+        <div class="separator"></div>
     {% endunless %}
 {% endfor %}

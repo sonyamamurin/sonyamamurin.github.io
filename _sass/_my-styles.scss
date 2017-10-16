@@ -2,19 +2,21 @@
 a {
   text-decoration: underline;
 
-  &.text-nav {
-    color: $link-color;
-    text-decoration: none;
-
     &:hover,
     &:focus,
     &:active {
-      color: $text-muted;
-    }
-  }
+      color: $oot-complementary;
+      }
+}
 
-  &.current-page {
-    color: $current-page-color;
+.text-nav {
+  a {
+    text-decoration: none;
+
+    &.current-page {
+      color: $oot-complementary;
+    }
+
   }
 }
 
@@ -32,21 +34,21 @@ img {
   }
 }
 
-.logo {
+.separator {
   background-image: url('/texoot.svg');
-  padding: .75em 0;
+  height: 1rem;
+
+  &.around-top {
+    height: 1.75rem;
+  }
 }
 
-.separator {
-  height: 2rem;
+.some-whitespace {
+  margin: .25em 0;
 }
 
 .hatch {
   font-size: .8em;
   padding: 0 .2em;
   vertical-align: middle;
-}
-
-.nav-box {
-  background-color: $nav-box-bg;
 }

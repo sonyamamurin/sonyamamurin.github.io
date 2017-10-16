@@ -5,12 +5,16 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
     {% include head.html %}
     <body>
-            <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
-                {% include header.html %}
-                <main>
-                    {{ content }}
-                </main>
-                {% include footer.html %}
-            </div>
+        <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
+            <div class="separator around-top"></div>
+            {% include header.html %}
+            {% include nav.html %}
+            <div class="separator around-top"></div>
+            <main>
+                {{ content }}
+            </main>
+            <div class="separator"></div>
+            {% include footer.html %}
+        </div>
     </body>
 </html>

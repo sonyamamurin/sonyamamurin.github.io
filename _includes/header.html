@@ -1,15 +1,3 @@
-<div class="logo separator"></div>
-<header class="container-fluid">
-        <a href="/" class="h1 text-nav">Anton Tetov</a>
-    <nav class="h2 text-right">
-		<a href="/" class="text-nav{% if page.url == "/" %} current-page{% endif %}">Portfolio</a>
-            {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-            {% for p in navigation_pages %}
-                {% if p.navigation_weight %}
-                    <span class="hatch"> ▨ </span> 
-		    <a href="{{ p.url }}" class="text-nav{% if p.url == page.url %} current-page{% endif %}">{{ p.title }}</a>
-		{% endif %}
-            {% endfor %}
-    </nav>
+<header class="some-whitespace text-nav h1">
+        <a href="/">Anton Tetov</a>
 </header>
-<div class="logo separator"></div>

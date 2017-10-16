@@ -1,0 +1,10 @@
+<nav class="h2 text-right text-nav some-whitespace">
+    <a href="/"{% if page.url == "/" %} class="current-page"{% endif %}>Portfolio</a>
+    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+    {% for p in navigation_pages %}
+        {% if p.navigation_weight %}
+            <span class="hatch"> ▨ </span>
+            <a href="{{ p.url }}"{% if p.url == page.url %} class="current-page"{% endif %}>{{ p.title }}</a>
+        {% endif %}
+    {% endfor %}
+</nav>

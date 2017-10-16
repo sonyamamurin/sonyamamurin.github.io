@@ -2,8 +2,8 @@
 layout: default
 ---
 <article itemscope itemtype="http://schema.org/Article">
-    <header itemprop="name">
-        <a class="h3 text-nav" href="{{ page.url }}">{{ page.title | escape }}</a>
+    <header class="text-nav" itemprop="name">
+        <a class="h3" href="{{ page.url }}">{{ page.title | escape }}</a>
     </header>
     <time class="small" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
     {{ content }}
