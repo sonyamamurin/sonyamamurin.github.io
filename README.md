@@ -19,6 +19,12 @@ I use a [gulp workflow](gulpfile.js) to optimize css and [Anatol Broder's Jekyll
 * Add srcset to image.html include with image width argument.
 * Get the size from media queries and grid for the `<img>` tag
 
+#### Links re TODO
+
+* [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+* [Responsive Images: If you’re just changing resolutions, use srcset.](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/)
+* [img srcset](https://html.com/attributes/img-srcset/)
+
 ## License
 
 Please contact me if you want to use any content from my portfolio. All other content is free to use and modify under the [MIT license](https://opensource.org/licenses/MIT).

@@ -1,1 +1,4 @@
-<img class="img-responsive include" src="{% unless include.external %}{{ site.assets-url }}{{ page.url }}{% endunless %}{{ include.file }}" alt="{% if include.description %}{{ include.description }}">{{ include.description }}{% else %}{{ include.file }}">{% endif %}
+<img class="img-responsive include" src="{% unless include.external %}{{ site.assets-url }}{{
+page.url }}{% endunless %}{{ include.file }}" alt="{% if include.description %}{{
+include.description }}{% else %}{{ include.file }}"{% endif %} {% if include.hidpi
+    %}srcset="{{ include.hidpi }}" sizes="XXXXX"{% endif %}>
