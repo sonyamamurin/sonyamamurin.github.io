@@ -28,30 +28,19 @@ defaults:
         values:
             layout: "post"
 
-logo: /logo.svg
-
 author:
     name: Anton Tetov
-    twitter: tetov2
+    twitter: te_tov
 
+blog_url: "https://blog.tetov.se/"
 email: anton@tetov.se
-twitter_username: tetov2
+twitter_username: te_tov
 github_username: tetov
 tumblr_username: tetov
 instagram_username: antontetov
 pgpkey_url: "pgpkey"
 
-social:
-  links:
-    - https://twitter.com/tetov2
-    - https://www.facebook.com/ntntvjhnssn
-    - https://github.com/tetov
-
 google_site_verification: Uz3ipYQgkud5NHu9JC-t-AjF2N3lI5eXDKJ0XsuIgXc
-
-navigation:
-    - about
-    - log
 
 permalink: /:title/
 
@@ -70,6 +59,7 @@ exclude:
     - package-lock.json
     - package.json
     - README.md
+    - vendor/bundle
 # Compress settings
 compress_html:
     comments: ["<!-- ", " -->"]

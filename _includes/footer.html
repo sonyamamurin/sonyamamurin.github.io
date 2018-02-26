@@ -1,20 +1,23 @@
 <footer class="small text-center some-whitespace text-nav">
+    {% if site.blog_url %}
+        <a href="{{ site.blog_url }}" rel="me">blog</a> •
+    {% endif %}
     {% if site.twitter_username %}
-        <a href="https://twitter.com/{{ site.twitter_username }}" rel="me">twitter</a>
+        <a href="https://twitter.com/{{ site.twitter_username }}" rel="me">twitter</a> •
     {% endif %}
     {% if site.tumblr_username %}
-        <a href="http://{{ site.tumblr_username }}.tumblr.com/" rel="me">tumblr</a>
+        <a href="http://{{ site.tumblr_username }}.tumblr.com/" rel="me">tumblr</a> •
     {% endif %}
     {% if site.instagram_username %}
-        <a href="https://instagram.com/{{ site.instagram_username }}" rel="me">instagram</a>
+        <a href="https://instagram.com/{{ site.instagram_username }}" rel="me">instagram</a> •
     {% endif %}
     {% if site.github_username %}
-        <a href="https://github.com/{{ site.github_username }}" rel="me">github</a>
+        <a href="https://github.com/{{ site.github_username }}" rel="me">github</a> •
     {% endif %}
     {% if site.email %}
-        <a href="mailto:{{ site.email }}">email</a>
+        <a href="mailto:{{ site.email }}">email</a> •
     {% endif %}
     {% if site.pgpkey_url %}
-        <a href="{{ url }}/{{ site.pgpkey_url }}">pgp public key</a>
+        <a href="{{ url }}/{{ site.pgpkey_url }}">pgp key</a>
     {% endif %}
 </footer>

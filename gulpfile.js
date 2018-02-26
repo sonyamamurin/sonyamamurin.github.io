@@ -14,7 +14,7 @@ var autoprefixer = require('autoprefixer'),
     uncss = require('postcss-uncss');
 
 var paths = {
-    buildScript: 'build.sh',
+    buildScript: './build.sh',
     sassSource: '_sass/main.scss',
     bootstrap: 'node_modules/bootstrap/scss/',
     html: '_site/**/*.html',
